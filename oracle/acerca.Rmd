@@ -14,7 +14,7 @@ the next word a user may want to type.
 
 1.  Predicted word is shown at the Predicted Word textbox.
 2.  Information on the n-gram algorithm used to predict is shown
-    as indication.
+    as a note.
 
 #### Note:
 

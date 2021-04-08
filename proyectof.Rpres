@@ -1,0 +1,47 @@
+Data Science Capstone: Course Project (Oracle Word Predictor)
+========================================================
+author: Werner Eduardo Garcia
+date: April 8, 2021
+autosize: true
+
+Overview
+========================================================
+
+With the advancement of technology, mobile phones have allowed us to be connected and interact with others quickly.
+
+However, every day it is important to save as much time as possible, and a keyboard that predicts the word we want to write can save us a lot of time by preventing us from typing more letters.
+
+The goal of the project is to develop a data product which uses natural language processing to predict 
+the next word a user may want to type.
+
+And how we do this (Algorithm)
+========================================================
+
+The prediction algorithm developed is based on an N-Gram Language Model. This model uses a Markov Assumption in which each word depends only on the previous N words in a given string of text. For this project a series of three N-gram models have been constructed:
+
+    Bigram: only the previous word matters
+    Trigram: only the previous two words matter
+    Quadgram: only the previous three words matter.
+
+Depending on the length of text input, the prediction algorithm selects candidates from appropriately ranked N-grams. 
+
+The Shiny Application
+========================================================
+It´s very easy to use:
+## Steps
+1.  In initial load up of the application, **"NULL"** will be
+    displayed at the Predicted Next Word textbox.
+2.  User may then enter a partially complete sentence to make oracle 
+    star working.
+3.  In the Application if you want help you can press help in the upper bar. 
+
+## Results
+1.  Predicted word is shown at the Predicted Word textbox.
+2.  Information on the n-gram algorithm used to predict is shown
+    as a note.
+
+Links
+========================================================
+
+- shiny app:  https://wegm00.shinyapps.io/Oracle/
+- Source code: https://github.com/wegm00/Final-Capstone
